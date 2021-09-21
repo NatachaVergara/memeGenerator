@@ -1,6 +1,10 @@
 *{margin:0;padding:0;box-sizing: border-box;}
 body{
-    background-color: black;
+      background-color: black;
+}
+.container{
+    width: 90%;
+    margin: auto;
 }
 /*Component: MemeInput => Estilo interno del input*/
 input{
@@ -14,8 +18,54 @@ input{
     width: 150px;
 }
 
+.spanTxt{   
+    display:flex;
+    flex-direction:column;
+    flex: 1;    
+    background-color:black
+}
+span{
+    position: absolute;
+    /* width: 100%; */
+    left: 540px;
+    margin-top: 0px;
+    font-size: 38px;
+    color: white;
+    /* text-shadow: 0 0 10px #000; */
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 rgb(255 250 250), 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;     
+}
+
+span:nth-child(2){
+    margin-top: 360px;
+}
+
+img {    
+    width: 100%;
+}
 
 
+@media screen and (max-width: 600px) {
+    .form-select > option{
+        width: 150px;
+    }
+
+    img{
+       margin-bottom: 20px;
+    }
+
+    span{
+        font-size: 15px;
+        left:130px;       
+        font-weight: bolder;
+    }  
+
+    span:nth-child(2){        
+        top:300px;
+        
+    }
+
+
+}
 
 
 
